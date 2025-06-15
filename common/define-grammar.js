@@ -963,7 +963,7 @@ module.exports = function defineGrammar(dialect) {
         optional(seq(
           optional(choice(',', ';')),
           sepBy1(
-            choice(',', $._semicolon),
+            choice(',', $._semicolon, $._function_signature_automatic_semicolon),
             choice(
               $.export_statement,
               $.property_signature,
