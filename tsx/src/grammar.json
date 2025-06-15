@@ -10360,6 +10360,10 @@
                               {
                                 "type": "SYMBOL",
                                 "name": "_semicolon"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "_function_signature_automatic_semicolon"
                               }
                             ]
                           },
@@ -10403,16 +10407,20 @@
                     {
                       "type": "CHOICE",
                       "members": [
-                        {
-                          "type": "STRING",
-                          "value": ","
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "_semicolon"
-                        }
-                      ]
-                    },
+                          {
+                            "type": "STRING",
+                            "value": ","
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "_semicolon"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "_function_signature_automatic_semicolon"
+                          }
+                        ]
+                      },
                     {
                       "type": "BLANK"
                     }
